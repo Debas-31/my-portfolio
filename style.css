@@ -154,7 +154,6 @@ i {
 }
 
 .hr-line {
-  margin: 0 1.5rem;
-  margin: 2rem 0;
+  margin: 2rem 1.5rem;
   opacity: 0.5;
 }
