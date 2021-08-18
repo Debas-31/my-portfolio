@@ -1,13 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: setup and mobile version skeleton project
+# My-portfolio: mobile version
 
->This project demonstrated the Milestone-one on the mobile version skeleton.  
+>This project is a continuation of milestone-1 in this milestone-2 added a work section on the mobile version skeleton.  
 The aim of this project to parse a Figma design to create an awesome UI using flexbox layout with the standard setup 
 while doing the best practices (Linter, Github Flow, Professional commits, pull request and documentation)
 
 
-![screenshot](./image/mobileScreenShoot.png)
+![screenshot](./image/mobile-view-screenShoot.png)
 
 ### Built With
 
