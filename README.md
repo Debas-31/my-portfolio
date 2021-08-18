@@ -16,7 +16,7 @@ while doing the best practices (Linter, Github Flow, Professional commits, pull 
 
 ### Live Demo
 
-[Visit the Live Demo](https://debas-31.github.io/mobile-version-portfolo/)
+[Visit the Live Demo](https://debas-31.github.io/my-portfolio/)
 
 ### Install
 
@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Debas-31/mobile-version-portfolo/issues).
+Feel free to check the [issues page](https://github.com/Debas-31/my-portfolio/issues).
 
 ### Show your support
 
@@ -48,4 +48,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/Debas-31/mobile-version-portfolo/blob/milestone-1/MIT.md) licensed.
+This project is [MIT](https://github.com/Debas-31/my-portfolio/blob/milestone-1/MIT.md) licensed.
