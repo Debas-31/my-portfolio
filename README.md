@@ -7,7 +7,7 @@ The aim of this project to parse a Figma design to create an awesome UI using fl
 while doing the best practices (Linter, Github Flow, Professional commits, pull request and documentation)
 
 
-![screenshot](./image/mobile-view-screenShoot.png)
+![screenshot](./image/Mobile-screen-shoot.png)
 
 ### Built With
 
