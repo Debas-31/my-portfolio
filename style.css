@@ -158,6 +158,11 @@ i {
   opacity: 0.5;
 }
 
+.social-media-icons{
+  display: flex;
+  justify-content: center;
+}
+
 .social-media-icons i {
   font-size: 1.4rem;
   padding: 0.75rem;
