@@ -308,11 +308,11 @@ i {
   ========================================
 */
 
-.contact-section{
+.contact-section {
   margin: 0 1.5rem;
 }
 
-.contact-us h1{
+.contact-us h1 {
   font-size: 2rem;
   line-height: 3.25rem;
   margin: 2rem auto 1.5rem auto;
@@ -322,7 +322,6 @@ i {
 }
 
 .contact-us p {
-  font-family: Inter;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -332,7 +331,9 @@ i {
   margin-bottom: 2.5rem;
 }
 
-.input-text input, .input-email input, .text-area textarea{
+.input-text input,
+.input-email input,
+.text-area textarea {
   display: block;
   width: 100%;
   margin: 1.2rem auto;
@@ -340,30 +341,29 @@ i {
   border-radius: 5px;
 }
 
-.btn-div{
+.btn-div {
   margin: 2rem auto 4rem auto;
 }
 
-.light-dark{
+.light-dark {
   opacity: 0.4;
   color: var(--var-horizontal-black);
 }
 
-.div-flex{
+.div-flex {
   display: flex;
   justify-content: center;
-  margin: 2rem auto -2rem auto;
+  margin: 0.5rem auto -2rem auto;
 }
 
 .l-line .my-email {
   color: var(--var-neutral-1);
-  margin-top: 0 auto 2rem auto;
+  margin: 0 auto 2rem auto;
   font-size: 1.3rem;
 }
+
 .line-small {
   border-bottom: 10px solid black;
-  margin: 1.5rem 6rem 0.5rem 6rem;
+  margin: 2.5rem 6rem 0.2rem 6rem;
   border-radius: 25px;
 }
-
-
