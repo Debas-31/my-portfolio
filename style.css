@@ -300,3 +300,10 @@ i {
 .btn:disabled {
   background: var(--var-secondary-2);
 }
+
+.button {
+  color: white;
+  border: 50px;
+  background: #7D73FC;
+  width: 30%;
+}
