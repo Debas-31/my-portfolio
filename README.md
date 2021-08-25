@@ -2,12 +2,12 @@
 
 # My-portfolio: mobile version
 
->This project is a continuation of milestone-1 in this milestone-2 added a work section on the mobile version skeleton.  
+>This milestone-3 is a continuation of the previous milestones.I create a contact form with html validations, implement importance of UX and the finished mobile version of my-portfolio.  
 The aim of this project to parse a Figma design to create an awesome UI using flexbox layout with the standard setup 
 while doing the best practices (Linter, Github Flow, Professional commits, pull request and documentation)
 
 
-![screenshot](./image/Mobile-screen-shoot.png)
+![screenshot](./image/mobile-version-screenShoot.png)
 
 ### Built With
 
@@ -48,4 +48,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/Debas-31/my-portfolio/blob/milestone-1/MIT.md) licensed.
+This project is [MIT](https://github.com/Debas-31/my-portfolio/blob/main/MIT.md) licensed.
