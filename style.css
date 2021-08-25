@@ -288,6 +288,7 @@ i {
 .btn:hover {
   background: var(--var-primary-2);
   color: var(--var-neutral-2);
+  cursor: pointer;
 }
 
 .btn:active {
