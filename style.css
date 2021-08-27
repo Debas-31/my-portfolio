@@ -424,7 +424,7 @@ i {
   Media query: laptop size
   ========================================
 */
-@media only screen and (min-width: 721px) and (max-width: 960px) {
+@media only screen and (min-width: 721px) and (max-width: 999px) {
   .aboutMe-section {
     margin: 0 auto;
     margin-top: 8rem;
@@ -559,8 +559,7 @@ i {
 */
 
 @media only screen and (min-width: 1000px) {
-
-  .nav{
+  .nav {
     width: 100%;
     max-width: 1118px;
   }
@@ -571,7 +570,7 @@ i {
   }
 
   .work-section {
-    margin: 0 8.875rem;
+    margin: 0 2.875rem;
   }
 
   .nav-mob {
@@ -625,7 +624,8 @@ i {
     align-items: center;
     gap: 10rem;
     justify-content: space-around;
-    margin: 0 0 12rem 0;
+    margin: 0 0 4rem 0;
+    padding: 0 12rem;
   }
 
   .grid-cards {
@@ -637,16 +637,20 @@ i {
     flex-direction: row;
     gap: 2rem;
     margin-top: 5rem;
+    max-width: 1024px;
+  }
+
+  .recent-works {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 
   .white-card {
-    width: 100%;
-    max-width: 684px;
+    width: 66%;
   }
 
   .card-content {
-    width: 100%;
-    max-width: 484px;
+    width: 33%;
   }
 
   .even {
