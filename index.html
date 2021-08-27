@@ -12,7 +12,7 @@
         <title>My Portfolio</title>
     </head>
     <body>
-    <main class="container">
+    <main class="container bgc-img-desktop bgc-img-mobile">
       <header>
         <nav id="nav" class="navbar">
             <div class="nav-mob">
@@ -27,18 +27,18 @@
                 <a href="#">Portfolio</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-                <a href="#"><i class="far fa-envelope fa-1.5x"></i></a>
+                <a href="#"><i class="far fa-envelope fa-2x"></i></a>
               </div>
             </div>
         </nav>
-        <section class="aboutMe-section" >
+        <section class="aboutMe-section" id="aboutMe-section">
               <div class="section-content">
                 <h1 class="section-text"> Debas G-ngus</h1>
                 <h2>software Developer</h2>
                 <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
               </div>
               <hr class="hr-line">
-              <div class="small-circle"><img src="./image/smallCircle.svg" alt="small-circle"></div>
+              <!-- <div class="small-circle"><img src="./image/smallCircle.svg" alt="small-circle"></div> -->
             <div class="list-item-div">
               <ul>
                 <li  class="l-f-s">Language</li>
@@ -67,7 +67,7 @@
             <hr class="hr-line">
         </section>
       </header>
-      <section class="work-section">
+      <section class="work-section" id="work-section">
        <div class="work-section-grid">
             <div class="work">
               <i class="fas fa-arrow-down"></i>
@@ -88,11 +88,11 @@
         </div>
         <div class="recent-work">
           <h1>MY RECENT WORK</h1>
-      </div>
+        </div>
         <hr class="hr-line">
         <div class="grid-cards">
-            <div class="card">
-              <div class="white-card"><img src="./image/Img-placeholder-project.png" alt="screen-image"></div>
+            <div class="card" >
+              <img class="white-card" src="./image/Img-placeholder-project.png" alt="screen-image">
               <div class="card-content">
                   <div class="text-card">
                     <h2>Multi-Post Stories</h2>
@@ -113,9 +113,7 @@
               </div>
             </div>
             <div class="card even">
-                <div class="white-card">
-                  <img src="./image/Img-placeholder-project.png" alt="screen-image">
-                </div>
+              <img class="white-card" src="./image/Img-placeholder-project.png" alt="screen-image">
                 <div class="card-content first">
                     <div class="text-card">
                       <h2>Multi-Post Stories</h2>
@@ -136,9 +134,7 @@
                 </div>
             </div>
             <div class="card">
-                    <div class="white-card">
-                      <img src="./image/Img-placeholder-project.png" alt="screen-image">
-                    </div>
+                    <img class="white-card" src="./image/Img-placeholder-project.png" alt="screen-image"> 
                     <div class="card-content">
                         <div class="text-card">
                           <h2>Multi-Post Stories</h2>
@@ -159,9 +155,7 @@
                     </div>
             </div>
             <div class="card even">
-                    <div class="white-card">
-                      <img src="./image/Img-placeholder-project.png" alt="screen-image">
-                    </div>
+                    <img class="white-card" src="./image/Img-placeholder-project.png" alt="screen-image">
                     <div class="card-content first">
                             <div class="text-card">
                               <h2>Multi-Post Stories</h2>
@@ -185,7 +179,7 @@
       </section>
     </main>
     <footer class="my-footer" >
-      <section class="contact-section">
+      <section class="contact-section" id="contact-section">
         <div class="contact-us">
           <h1>CONTACT US</h1>
           <h2>Let’s chat!</h2>
@@ -197,7 +191,7 @@
             <div class="input-email"><input type="email" name="email" placeholder="Example: user@gmail.com" required></div> 
             <div class="text-area"><textarea maxlength="500" name="text-area" placeholder="Enter text here..." required></textarea></div> 
             <div class="btn-div">
-              <button type="submit" class="btn">See Project</button>
+              <button type="submit" class="btn btn-form">See Project</button>
             </div>
           </form>
         </div>
