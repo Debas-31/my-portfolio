@@ -27,10 +27,6 @@ body {
   margin: auto;
   font-family: 'Roboto', sans-serif;
   background-color: var(--var-background);
-  background-image: url(image/bigCircle.svg);
-  background-repeat: no-repeat;
-  background-position: 0% 2%;
-  background-attachment: scroll;
   overflow-x: hidden;
 }
 
@@ -72,6 +68,13 @@ i {
   visibility: hidden;
 }
 
+.bgc-img-desktop {
+  background-image: url(image/two-circles-header.png);
+  background-repeat: no-repeat;
+  background-position: 21% 5%;
+  background-attachment: scroll;
+}
+
 .nav-mob {
   display: flex;
   justify-content: space-between;
@@ -87,6 +90,9 @@ i {
 .aboutMe-section {
   margin: 0 auto;
   text-align: center;
+  width: 100%;
+  max-width: 448px;
+  min-height: 100vh;
 }
 
 .fa-bars {
@@ -150,6 +156,7 @@ i {
 
 .list-item-div {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 4rem;
   text-align: left;
@@ -172,13 +179,6 @@ i {
   padding: 0.75rem;
   margin-bottom: 2rem;
 }
-
-/* .work-section {
-  background-image: url(image/Background-bottom.png);
-  background-repeat: no-repeat;
-  background-position: -35rem -1rem;
-  background-attachment: scroll;
-} */
 
 .small-circle {
   position: absolute;
@@ -211,7 +211,7 @@ i {
 }
 
 .recent-work h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: left;
 }
 
@@ -291,7 +291,6 @@ i {
   padding: 0.75rem;
   color: var(--var-neutral-1);
   border: none;
-  margin-bottom: 0.5rem;
 }
 
 .btn:hover {
@@ -362,12 +361,8 @@ i {
   border-radius: 5px;
 }
 
-.btn-div {
-  margin: 2rem auto 4rem auto;
-}
-
 .light-dark {
-  opacity: 0.4;
+  opacity: 0.2;
   color: var(--var-horizontal-black);
   width: 100%;
 }
@@ -415,8 +410,8 @@ i {
   .div-icons {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
   }
 
   .line-small {
@@ -430,6 +425,16 @@ i {
   ========================================
 */
 @media only screen and (min-width: 721px) and (max-width: 960px) {
+  .aboutMe-section {
+    margin: 0 auto;
+    margin-top: 8rem;
+  }
+
+  .work-section {
+    margin: 0 3rem;
+    min-height: 100vh;
+  }
+
   .nav-mob {
     display: none;
   }
@@ -441,6 +446,7 @@ i {
   .nav-desktop-right {
     display: flex;
     gap: 2rem;
+    align-items: center;
   }
 
   .section-content {
@@ -479,7 +485,10 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-around;
     gap: 10rem;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
   }
 
   .card {
@@ -489,15 +498,21 @@ i {
     margin-top: 3rem;
   }
 
+  .white-card {
+    width: 100%;
+    max-width: 684px;
+  }
+
   .card-content {
-    flex: 2;
-    margin-top: -5rem;
+    width: 100%;
+    max-width: 484px;
   }
 
   .even {
     display: flex;
     flex-direction: row-reverse;
     gap: 2rem;
+    margin-left: 20rem;
   }
 
   .line-small {
@@ -509,6 +524,15 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -10rem;
+  }
+
+  .contact-section {
+    min-height: 100vh;
+    margin: auto;
+    margin-top: 15rem;
+    width: 100%;
+    max-width: 684px;
   }
 
   .contact-us h1 {
@@ -519,8 +543,12 @@ i {
     display: block;
   }
 
-  .contact-section {
-    margin: 0 12rem;
+  .btn-form {
+    margin: 4.3rem 0 3.6rem;
+    padding: 0.75rem;
+    width: 160px;
+    height: 48px;
+    font-size: 0.94rem;
   }
 }
 
@@ -531,6 +559,15 @@ i {
 */
 
 @media only screen and (min-width: 961px) {
+  .aboutMe-section {
+    margin: 0 auto;
+    margin-top: 12rem;
+  }
+
+  .work-section {
+    margin: 0 8.875rem;
+  }
+
   .nav-mob {
     display: none;
   }
@@ -542,6 +579,7 @@ i {
   .nav-desktop-right {
     display: flex;
     gap: 2rem;
+    align-items: center;
   }
 
   .section-content {
@@ -579,8 +617,9 @@ i {
   .work-section-grid {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10rem;
+    justify-content: space-around;
+    margin: 0 0 12rem 0;
   }
 
   .grid-cards {
@@ -594,9 +633,14 @@ i {
     margin-top: 5rem;
   }
 
+  .white-card {
+    width: 100%;
+    max-width: 684px;
+  }
+
   .card-content {
-    flex: 4;
-    margin-top: -5rem;
+    width: 100%;
+    max-width: 484px;
   }
 
   .even {
@@ -617,7 +661,10 @@ i {
   }
 
   .contact-section {
-    margin: 0 12rem;
+    min-height: 100vh;
+    margin-top: 10rem;
+    width: 100%;
+    max-width: 684px;
   }
 
   .contact-us h1 {
@@ -626,5 +673,13 @@ i {
 
   .contact-us h2 {
     display: block;
+  }
+
+  .btn-form {
+    margin: 4.3rem 0 3.6rem;
+    padding: 0.75rem;
+    width: 160px;
+    height: 48px;
+    font-size: 0.94rem;
   }
 }
