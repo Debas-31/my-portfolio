@@ -31,7 +31,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 2%;
   background-attachment: scroll;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 a {
@@ -47,14 +47,17 @@ i {
   color: var(--var-neutral-2);
 }
 
+.container {
+  margin: 0 auto;
+}
+
 /* Navigation bar section */
 
 .navbar {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
-
 
 .nav-desktop {
   display: flex;
@@ -72,7 +75,7 @@ i {
 .nav-mob {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.6rem 0 0.5rem;
+  padding: 1rem 1.6rem 0 1.2rem;
 }
 
 .mob-nav-logo {
@@ -170,12 +173,12 @@ i {
   margin-bottom: 2rem;
 }
 
-.work-section {
-  background-image: url(image/portfolio\ background\ shapes\ mobile.svg);
+/* .work-section {
+  background-image: url(image/Background-bottom.png);
   background-repeat: no-repeat;
-  background-position: 0 30rem;
+  background-position: -35rem -1rem;
   background-attachment: scroll;
-}
+} */
 
 .small-circle {
   position: absolute;
@@ -217,8 +220,8 @@ i {
   column-gap: 1rem;
 }
 
-.work-section-grid div:nth-child(1){
-  visibility:hidden;
+.work-section-grid div:nth-child(1) {
+  visibility: hidden;
 }
 
 .grid-cards {
@@ -230,8 +233,9 @@ i {
 }
 
 .card {
-  display: grid;
-  grid-gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .project {
@@ -250,12 +254,13 @@ i {
 }
 
 .white-card {
-  height: 236px;
-  width: 327px;
   left: 0;
   top: 0;
   border-radius: 0;
-  background: var(--var-card-1);
+}
+
+.white-card img {
+  width: 100%;
 }
 
 .card h2 {
@@ -337,7 +342,7 @@ i {
 }
 
 .contact-us p {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -364,6 +369,7 @@ i {
 .light-dark {
   opacity: 0.4;
   color: var(--var-horizontal-black);
+  width: 100%;
 }
 
 .div-flex {
@@ -386,81 +392,241 @@ i {
 
 /*
   ========================================
-  Media query: Desktop size
+  Media query: large mobile size and tablet
   ========================================
 */
-
-@media screen and (min-width: 1024px) {
-  .nav-desktop{
-    visibility: visible;
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+  .list-item-div {
+    display: flex;
+    justify-content: space-between;
   }
-  
-.nav-desktop-right {
-  display: flex;
-  gap: 2rem;
+
+  .social-media-icons {
+    padding-top: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .line-small {
+    display: none;
+  }
 }
 
-  .nav-mob{
+
+/*
+  ========================================
+  Media query: laptop size
+  ========================================
+*/
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+  .nav-mob {
     display: none;
   }
 
-  .aboutMe-section {
-    margin: 0 27.5rem;
+  .nav-desktop {
+    visibility: visible;
+  }
+
+  .nav-desktop-right {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .section-content {
+    margin-top: 3rem;
   }
 
   .list-item-div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    padding-top: 1rem;
+  }
+
+  .div-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .work {
+    margin-top: -1rem;
+  }
+
+  .work-section-grid div:nth-child(1) {
+    visibility: visible;
+    margin-top: -1rem;
   }
 
   .work-section-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20rem;
-    margin: 2rem 0 14rem 0;
-  }
-
-  .work-section-grid div:nth-child(1){
-    visibility: visible;
-  }
-
-  .work-section{
-    margin: 0 8.87rem;
-  }
-
-  .recent-work h1 {
-    font-size: 4rem;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
   }
 
   .card {
     display: flex;
-  }
-
-  .even{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 4rem;
-
-  }
-
-  .first{
-    margin-left: 2rem;
-  }
-
-  .white-card {
-    width: 684px;
-    height: 448px;
-    width: 60%;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 3rem;
   }
 
   .card-content {
-    margin: -4rem 0 0 3rem;
-    width: 38%;
+    flex: 2;
+    margin-top: -5rem;
   }
 
-  .btn-div {
-    margin: -1rem 0 0 0rem;
+  .even {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
   }
- 
+
+  .line-small {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-us h1 {
+    display: none;
+  }
+
+  .contact-us h2 {
+    display: block;
+  }
+
+  .contact-section {
+    margin: 0 12rem;
+  }
+}
+
+
+/*
+  ========================================
+  Media query: Desktop size
+  ========================================
+*/
+
+@media only screen and (min-width: 961px) {
+  .nav-mob {
+    display: none;
+  }
+
+  .nav-desktop {
+    visibility: visible;
+  }
+
+  .nav-desktop-right {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .section-content {
+    margin-top: 3rem;
+  }
+
+  .list-item-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    padding-top: 1rem;
+  }
+
+  .div-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .work {
+    margin-top: -1rem;
+  }
+
+  .work-section-grid div:nth-child(1) {
+    visibility: visible;
+    margin-top: -1rem;
+  }
+
+  .work-section-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .grid-cards {
+    margin: 0 2rem;
+  }
+
+  .card {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .card-content {
+    flex: 4;
+    margin-top: -5rem;
+  }
+
+  .even {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  .line-small {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-section {
+    margin: 0 12rem;
+  }
+
+  .contact-us h1 {
+    display: none;
+  }
+
+  .contact-us h2 {
+    display: block;
+  }
 }
