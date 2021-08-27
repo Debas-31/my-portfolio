@@ -558,7 +558,13 @@ i {
   ========================================
 */
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1000px) {
+
+  .nav{
+    width: 100%;
+    max-width: 1118px;
+  }
+
   .aboutMe-section {
     margin: 0 auto;
     margin-top: 12rem;
