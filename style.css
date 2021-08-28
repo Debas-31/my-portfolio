@@ -291,6 +291,7 @@ i {
   padding: 0.75rem;
   color: var(--var-neutral-1);
   border: none;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -647,6 +648,11 @@ i {
 
   .white-card {
     width: 66%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .white-card:hover {
+    transform: scale(1.09);
   }
 
   .card-content {
@@ -683,6 +689,14 @@ i {
 
   .contact-us h2 {
     display: block;
+  }
+
+  .contact-us p {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .contact-us p:hover {
+    transform: translate(1rem, 0);
   }
 
   .btn-form {
