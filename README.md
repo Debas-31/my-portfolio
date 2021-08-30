@@ -2,10 +2,7 @@
 
 # My-portfolio: Desktop Version
 
->This milestone is a continuation of the previous milestones. In this project, I was done a Desktop-Version with different screen sizes in a responsively way by using media queries as well as UX form with HTML validations, implement the importance of UX and the finished desktop version of my-portfo
-The aim of this project to parse a Figma design to create an awesome UI using flexbox and grid layout media queries with the standard setup 
-while doing the best practices (Linter, Github Flow, Professional commits, pull request and documentation)
-
+>This milestone is a continuation of the previous milestones. In this project, I use a GitHub Pages to deploy my-portfolio website.
 
 ![screenshot](./image/Desktop-version.png)
 
@@ -44,7 +41,7 @@ Feel free to check the [issues page](https://github.com/Debas-31/my-portfolio/is
 Give a ⭐️ if you like this project!
 
 ### Acknowledgments
-- Microverse and Figma
+- GitHub 
 
 ## 📝 License
 
