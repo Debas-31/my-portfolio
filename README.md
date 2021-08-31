@@ -2,7 +2,7 @@
 
 # My-portfolio: Desktop Version
 
->This milestone is a continuation of the previous milestones. In this project, I use a GitHub Pages to deploy my-portfolio website.
+>In this project, I learn how google analytics works. I use google analytics for accessing my followers and viewers to my-portfolio website.
 
 ![screenshot](./image/Desktop-version.png)
 
