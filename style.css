@@ -210,7 +210,7 @@ i {
   color: var(--var-primary-3);
 }
 
-.recent-work h1 {
+.recent-work h2 {
   font-size: 2rem;
   text-align: left;
 }
