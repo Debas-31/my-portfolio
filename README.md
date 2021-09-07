@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My-portfolio: Desktop Version
+# My-portfolio: mobile menu
 
->In this project, I learn how google analytics works. I use google analytics for accessing my followers and viewers to my-portfolio website.
-
-![screenshot](./image/Desktop-version.png)
+>In this project's Milestone, I use HTML, CSS, and javascript linter and javascript events on DOM. By Click the hamburger menu different sections of my portfolio website shown.
+![screenshot](./image/mobile-menu-screenShoot.png)
 
 ### Built With
 
 - HTML5
 - CSS3
+- JS
 
 ### Live Demo
 
