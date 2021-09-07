@@ -89,12 +89,76 @@ i {
   padding: 1rem 1.6rem 0 1.2rem;
 }
 
-.mob-nav-logo {
+.logo {
   font-size: 1.3rem;
   color: #edecff;
 }
 
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--var-background);
+  background-image: url(image/mobile-menu.png);
+  background-repeat: no-repeat;
+  transform: translate(-100%);
+  transition: all 1s ease-in-out;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.showSideBar {
+  transform: translate(0);
+}
+
+.hamburger-menu i::before,
+.hamburger-menu i::after {
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-menu i {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: var(--var-primary-3);
+}
+
+.exit,
+.fas-times {
+  padding-right: 2rem;
+  margin-top: 2rem;
+  color: var(--var-neutral-1);
+}
+
+.ul-link {
+  margin: 2rem 0;
+}
+
+.ul-link-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.ul-link-items a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.ul-link-items a:hover {
+  cursor: pointer;
+  color: var(--var-neutral-1);
+  background-color: var(--var-neutral-2);
+}
+
 /* Section */
+
 .aboutMe-section {
   margin: 0 auto;
   text-align: center;
@@ -399,6 +463,7 @@ i {
   Media query: large mobile size and tablet
   ========================================
 */
+
 @media only screen and (min-width: 540px) and (max-width: 720px) {
   .list-item-div {
     display: flex;
@@ -433,7 +498,12 @@ i {
   Media query: laptop size
   ========================================
 */
+
 @media only screen and (min-width: 721px) and (max-width: 999px) {
+  .hamburger-menu {
+    display: none;
+  }
+
   .aboutMe-section {
     margin: 0 auto;
     margin-top: 8rem;
@@ -568,6 +638,10 @@ i {
 */
 
 @media only screen and (min-width: 1000px) {
+  .hamburger-menu {
+    display: none;
+  }
+
   .nav {
     width: 100%;
     max-width: 1118px;

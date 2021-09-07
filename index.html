@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EF9M0P7BLG"></script>
         <script>
@@ -10,9 +13,6 @@
 
           gtag('config', 'G-EF9M0P7BLG');
         </script>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +25,12 @@
       <header>
         <nav id="nav" class="navbar">
             <div class="nav-mob">
-              <a  href="#" class="mob-nav-logo">S-D-Bus</a>
+              <a  href="#" class="logo">S-D-Bus</a>
               <a href="#"><i class="fas fa-bars fa-2x"></i></a>
           </div>
             <div class="nav-desktop">
               <div class="middle-nav-left">
-                <a  href="#" class="desktop-nav-logo">S-D-Bus</a>
+                <a  href="#" class="logo">S-D-Bus</a>
               </div>
               <div class="nav-desktop-right">
                 <a href="#">Portfolio</a>
@@ -40,6 +40,22 @@
               </div>
             </div>
         </nav>
+        <div class="hamburger-menu">
+          <i class="fas fa-times exit"></i>
+          <ul class="ul-link">
+            <li class="ul-link-items">
+              <a href="#nav"> Portfolio</a>
+              <i class="fas fa-angle-right"></i>
+            <li class="ul-link-items">
+              <a href="#aboutMe-section"> About</a>
+              <i class="fas fa-angle-right"></i>
+            </li>
+            <li class="ul-link-items">
+              <a href="#contact-section">Contact</a>
+              <i class="fas fa-angle-right"></i>
+            </li>
+          </ul>
+        </div>
         <section class="aboutMe-section" id="aboutMe-section">
               <div class="section-content">
                 <h1 class="section-text"> Debas G-ngus</h1>
@@ -223,5 +239,6 @@
       </div>
       <div class="line-small"></div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
