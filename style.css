@@ -14,7 +14,6 @@
   --var-horizontal-dark-black: #333;
 }
 
-
 /* set the default value to zero */
 
 * {
@@ -47,7 +46,6 @@ i {
 .container {
   margin: 0 auto;
 }
-
 
 /* Navigation bar section */
 
@@ -158,7 +156,6 @@ i {
   color: var(--var-neutral-1);
   background-color: var(--var-neutral-2);
 }
-
 
 /* Section */
 
@@ -387,7 +384,6 @@ i {
   background: var(--var-secondary-2);
 }
 
-
 /*
   ========================================
   Footer: contact-section
@@ -462,7 +458,6 @@ i {
   border-radius: 25px;
 }
 
-
 /*
   ========================================
   Media query: large mobile size and tablet
@@ -497,7 +492,6 @@ i {
     display: none;
   }
 }
-
 
 /*
   ========================================
@@ -636,7 +630,6 @@ i {
     font-size: 0.94rem;
   }
 }
-
 
 /*
   ========================================
