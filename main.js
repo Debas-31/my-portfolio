@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 const hamburger = document.querySelector('.nav-mob');
 const sideBar = document.querySelector('.hamburger-menu');
+
 function openSideBar() {
   sideBar.classList.add('showSideBar');
 }
