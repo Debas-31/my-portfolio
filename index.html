@@ -21,7 +21,7 @@
         <title>Debas' Portfolio</title>
     </head>
     <body>
-    <main class="container bgc-img-desktop bgc-img-mobile">
+    <main class="container bgc-img-desktop bgc-img-mobile main">
       <header>
         <nav id="nav" class="navbar">
             <div class="nav-mob">
@@ -33,13 +33,14 @@
                 <a  href="#" class="logo">S-D-Bus</a>
               </div>
               <div class="nav-desktop-right">
-                <a href="#">Portfolio</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#"><i class="far fa-envelope fa-2x"></i></a>
+                <a href="#nav">Portfolio</a>
+                <a href="#aboutMe-section">About</a>
+                <a href="#contact-section">Contact</a>
+                <a href="#envelop"><i class="far fa-envelope fa-2x"></i></a>
               </div>
             </div>
         </nav>
+<!-- Hamburger menu start -->
         <div class="hamburger-menu">
           <i class="fas fa-times exit"></i>
           <ul class="ul-link">
@@ -56,6 +57,7 @@
             </li>
           </ul>
         </div>
+<!-- Hamburger menu start -->
         <section class="aboutMe-section" id="aboutMe-section">
               <div class="section-content">
                 <h1 class="section-text"> Debas G-ngus</h1>
@@ -133,7 +135,7 @@
                     <li>Ruby</li>
                   </ul>
                   <div class="btn-div">
-                    <button type="button" class="btn">See Project</button>
+                    <button type="button" class="btn btn2">See Project</button>
                   </div>
               </div>
             </div>
@@ -154,7 +156,7 @@
                         <li>Ruby</li>
                     </ul>
                     <div class="btn-div">
-                      <button type="button" class="btn">See Project</button>
+                      <button type="button" class="btn btn2">See Project</button>
                     </div>
                 </div>
             </div>
@@ -175,7 +177,7 @@
                           <li>Ruby</li>
                       </ul>
                       <div class="btn-div">
-                          <button type="button" class="btn">See Project</button>
+                          <button type="button" class="btn btn2">See Project</button>
                       </div>
                     </div>
             </div>
@@ -196,7 +198,7 @@
                               <li>Ruby</li>
                             </ul>
                             <div class="btn-div">
-                              <button type="button" class="btn">See Project</button>
+                              <button type="button" class="btn btn2">See Project</button>
                             </div>
                     </div>
             </div>
@@ -204,7 +206,7 @@
        </div>
       </section>
     </main>
-    <footer class="my-footer" >
+    <footer class="my-footer footer" >
       <section class="contact-section" id="contact-section">
         <div class="contact-us">
           <h1>CONTACT US</h1>
@@ -212,13 +214,14 @@
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
         <div class="div-form">
-          <form action="https://formspree.io/f/xrgrovrb" method="POST">
+          <form class="contact-form" id="form" action="https://formspree.io/f/xrgrovrb" method="POST">
             <div class="input-text"><input type="text" name="username" maxlength="30" placeholder="Enter your full name" required></div> 
-            <div class="input-email"><input type="email" name="email" placeholder="Example: user@gmail.com" required></div> 
+            <div class="input-email"><input type="email" id="email" name="email" placeholder="Example: user@gmail.com" required></div> 
             <div class="text-area"><textarea maxlength="500" name="text-area" placeholder="Enter text here..." required></textarea></div> 
             <div class="btn-div">
               <button type="submit" class="btn btn-form">See Project</button>
             </div>
+            <span id="validator-message"></span>
           </form>
         </div>
       </section>
@@ -234,11 +237,13 @@
             </ul>
         </div>
         <div class="l-line">
-          <a href="#" class="my-email">debas31@gmail.com</a>
+          <a href="#envelop" id="envelop" class="my-email">debas31@gmail.com</a>
         </div>
       </div>
       <div class="line-small"></div>
     </footer>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
