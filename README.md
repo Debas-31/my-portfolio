@@ -2,7 +2,7 @@
 
 # My-portfolio: mobile menu
 
->In this project's Milestone, I use HTML, CSS, and javascript linter and javascript events on DOM. By Click the hamburger menu different sections of my portfolio website shown.
+>In this project's Milestone, I created javascript Client side validation when users use a guide by giving a message this part of UX.
 ![screenshot](./image/Form-validation.png)
 
 ### Built With
