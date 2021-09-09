@@ -457,7 +457,7 @@ i {
   border-bottom: 10px solid black;
   margin: 2.5rem 6rem 0.2rem 6rem;
   border-radius: 25px;
-} 
+}
 
 /*
   ========================================
@@ -467,6 +467,8 @@ i {
 #validator-message {
   font-size: 1.2rem;
   font-weight: 400;
+  color: red;
+  margin-bottom: 1rem;
 }
 
 /*
