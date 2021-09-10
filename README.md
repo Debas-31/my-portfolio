@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My-portfolio: mobile menu
+# My-portfolio: preserve-data-in-the-browser
 
->In this project's Milestone, I created javascript Client side validation when users use a guide by giving a message this part of UX.
-![screenshot](./image/Form-validation.png)
+>In this project's Milestone, I use javascript object to store data from users when submitted the form in local storage.
+![screenshot](./image/Screen-localstorage.png)
 
 ### Built With
 
