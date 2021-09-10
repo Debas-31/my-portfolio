@@ -21,7 +21,7 @@
         <title>Debas' Portfolio</title>
     </head>
     <body>
-    <main class="container bgc-img-desktop bgc-img-mobile">
+    <main class="container bgc-img-desktop bgc-img-mobile main">
       <header>
         <nav id="nav" class="navbar">
             <div class="nav-mob">
@@ -133,7 +133,7 @@
                     <li>Ruby</li>
                   </ul>
                   <div class="btn-div">
-                    <button type="button" class="btn">See Project</button>
+                    <button type="button" class="btn btn2">See Project</button>
                   </div>
               </div>
             </div>
@@ -154,7 +154,7 @@
                         <li>Ruby</li>
                     </ul>
                     <div class="btn-div">
-                      <button type="button" class="btn">See Project</button>
+                      <button type="button" class="btn btn2">See Project</button>
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                           <li>Ruby</li>
                       </ul>
                       <div class="btn-div">
-                          <button type="button" class="btn">See Project</button>
+                          <button type="button" class="btn btn2">See Project</button>
                       </div>
                     </div>
             </div>
@@ -196,7 +196,7 @@
                               <li>Ruby</li>
                             </ul>
                             <div class="btn-div">
-                              <button type="button" class="btn">See Project</button>
+                              <button type="button" class="btn btn2">See Project</button>
                             </div>
                     </div>
             </div>
@@ -204,7 +204,7 @@
        </div>
       </section>
     </main>
-    <footer class="my-footer" >
+    <footer id="footer" class="footer" >
       <section class="contact-section" id="contact-section">
         <div class="contact-us">
           <h1>CONTACT US</h1>
@@ -212,10 +212,10 @@
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
         <div class="div-form">
-          <form action="https://formspree.io/f/xrgrovrb" method="POST">
-            <div class="input-text"><input type="text" name="username" maxlength="30" placeholder="Enter your full name" required></div> 
-            <div class="input-email"><input type="email" name="email" placeholder="Example: user@gmail.com" required></div> 
-            <div class="text-area"><textarea maxlength="500" name="text-area" placeholder="Enter text here..." required></textarea></div> 
+          <form id="form" action="https://formspree.io/f/xrgrovrb" method="POST">
+            <div class="input-text"><input id="userName" type="text" name="username" maxlength="30" placeholder="Enter your full name" required></div> 
+            <div class="input-email"><input id="email" type="email" name="email" placeholder="Example: user@gmail.com" required></div> 
+            <div class="text-area"><textarea id="textMessage" maxlength="500" name="text-area" placeholder="Enter text here..." required></textarea></div> 
             <div class="btn-div">
               <button type="submit" class="btn btn-form">See Project</button>
             </div>
@@ -240,5 +240,7 @@
       <div class="line-small"></div>
     </footer>
     <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script src="localStorage.js"></script>
 </body>
 </html>
