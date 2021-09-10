@@ -35,3 +35,50 @@ const projects = [
     technologis: [node.js, bootstrap, sass ],
   },
 ];
+
+// Display a functions
+
+function displayTechnologies(techArr) {
+    let technologiesHtml = "<ul class='technologies-used'>";
+    techArr.forEach((tech, index) => {
+      technologiesHtml += `<li class='technology'>${tech}</li>`;
+      if (index !== (techArr.length - 1)) {
+        technologiesHtml += "<li class='separator'>./image/vertical-line.png alt='Line separing the technologies used in a project'></li>";
+      }
+    });
+    technologiesHtml += '</ul>';
+    return technologiesHtml;
+  }
+
+  function displayTechnologiesForModal(techArr) {
+    let technologiesHtml = "<ul class='technologies-used'>";
+    techArr.forEach((tech, index) => {
+      if (index === 0) {
+        technologiesHtml += "<li class='separator'><img src='./image/vertical-line.png' alt='Line separing the technologies used in a project'></li>";
+      }
+      technologiesHtml += `<li class='technology'>${tech}</li>`;
+      technologiesHtml += "<li class='separator'><img src='./image/vertical-line.png' alt='Line separing the technologies used in a project'></li>";
+    });
+    technologiesHtml += '</ul>';
+    return technologiesHtml;
+  }
+
+  function displaySingleProject(p) {
+    const projectHtml = `<div class='project'>
+         <div class='screenshot-container'>
+           <img src='${p.picture}' alt='Screenshot of the project named ${p.title}'
+              class='screenshot'>
+         </div>
+         <div class='project-rest'>
+          <h3 class='project-title'>${p.title}</h3>
+          <div class='project-description'>
+              <p>${p.description}</p>
+          </div>
+          ${displayTechnologies(p.technologies)}
+          <button class='project-details-btn' type='button' data-project-id='${p.id}'>See Project</button>
+      </div>
+  </div>
+      `;
+    return projectHtml;
+  }
+  
