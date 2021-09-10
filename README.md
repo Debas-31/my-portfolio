@@ -2,8 +2,8 @@
 
 # My-portfolio: mobile menu
 
->In this project's Milestone, I use HTML, CSS, and javascript linter and javascript events on DOM. By Click the hamburger menu different sections of my portfolio website shown.
-![screenshot](./image/mobile-menu-screenShoot.png)
+>In this project's Milestone, I use javascript object to store data from users when submitted the form in local storage.
+![screenshot](./image/Screen-localstorage.png)
 
 ### Built With
 
