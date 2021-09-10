@@ -436,6 +436,7 @@ i {
 
 .light-dark {
   opacity: 0.2;
+  margin-top: 2rem;
   color: var(--var-horizontal-black);
   width: 100%;
 }
@@ -456,6 +457,19 @@ i {
   border-bottom: 10px solid black;
   margin: 2.5rem 6rem 0.2rem 6rem;
   border-radius: 25px;
+}
+
+/*
+  ========================================
+  Javascript form to be styled
+  ========================================
+*/
+
+#validator-message {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: red;
+  margin-bottom: 1rem;
 }
 
 /*
@@ -638,6 +652,76 @@ i {
 */
 
 @media only screen and (min-width: 1000px) {
+  .modal {
+    width: 70%;
+    height: 100%;
+    margin-top: 2%;
+    position: relative;
+    gap: 20px;
+  }
+
+  .modal-header {
+    margin-left: 20px;
+    width: 95%;
+  }
+
+  .mps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .cancelIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .snapchoot-modal {
+    display: none;
+  }
+
+  .snapchoot-modal-desktop {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .modal-para-mobile {
+    display: none;
+  }
+
+  .modal-para-desktop {
+    width: 684px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .modal-ul {
+    width: 300px;
+  }
+
+  .modal-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin: 0 auto;
+    height: 48px;
+    margin-bottom: 30px;
+  }
+
+  .seeLive,
+  .seeSource {
+    margin-top: unset;
+  }
+
   .hamburger-menu {
     display: none;
   }
