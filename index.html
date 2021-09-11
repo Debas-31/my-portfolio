@@ -112,101 +112,42 @@
                 <span>work</span>
             </div> 
         </div>
-        <div class="recent-works">
         <div class="recent-work">
           <h2>MY RECENT WORK</h2>
         </div>
         <hr class="hr-line">
-        <div class="grid-cards">
-            <div class="card" >
-              <img class="white-card" src="./image/Img-placeholder-project.png" alt="project one work image">
-              <div class="card-content">
-                  <div class="text-card">
-                    <h2>Multi-Post Stories</h2>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                  </div>
-                  <ul class="project">
-                    <li>css</li>
-                    <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                    <li>html</li>
-                    <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                    <li>bootstrap</li>
-                    <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                    <li>Ruby</li>
-                  </ul>
-                  <div class="btn-div">
-                    <button type="button" class="btn btn2">See Project</button>
-                  </div>
-              </div>
-            </div>
-            <div class="card even">
-              <img class="white-card" src="./image/Img-placeholder-project.png" alt="project two image">
-                <div class="card-content first">
-                    <div class="text-card">
-                      <h2>Multi-Post Stories</h2>
-                      <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    </div>
-                    <ul class="project">
-                        <li>css</li>
-                        <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                        <li>html</li>
-                        <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                        <li>bootstrap</li>
-                        <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                        <li>Ruby</li>
-                    </ul>
-                    <div class="btn-div">
-                      <button type="button" class="btn btn2">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                    <img class="white-card" src="./image/Img-placeholder-project.png" alt="project three image"> 
-                    <div class="card-content">
-                        <div class="text-card">
-                          <h2>Multi-Post Stories</h2>
-                          <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                        </div>
-                        <ul class="project">
-                          <li>css</li>
-                          <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                          <li>html</li>
-                          <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                          <li>bootstrap</li>
-                          <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                          <li>Ruby</li>
-                      </ul>
-                      <div class="btn-div">
-                          <button type="button" class="btn btn2">See Project</button>
-                      </div>
-                    </div>
-            </div>
-            <div class="card even">
-                    <img class="white-card" src="./image/Img-placeholder-project.png" alt="project four image">
-                    <div class="card-content first">
-                            <div class="text-card">
-                              <h2>Multi-Post Stories</h2>
-                              <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                            </div>
-                            <ul class="project">
-                              <li>css</li>
-                              <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                              <li>html</li>
-                              <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                              <li>bootstrap</li>
-                              <li><img src="./image/vertical-line.png" alt="vertical line"></li>
-                              <li>Ruby</li>
-                            </ul>
-                            <div class="btn-div">
-                              <button type="button" class="btn btn2">See Project</button>
-                            </div>
-                    </div>
-            </div>
+<!-- ***************** PopUp ********************* -->
+        <div class="overlay">
         </div>
-       </div>
+        <div class="popup-project">
+          <div class="popup-header">
+              <div class="popup-title"></div>
+              <div class="popup-close">&times;</div>
+          </div>
+
+          <div class="popup-main">
+              <div class="popup-image-container">
+                  <img src="./popup-img/Snapshoot-modal-mobile.png" alt="." class="popup-image">
+              </div>
+              <p class="popup-long-description">
+              </p>
+              <ul class="popup-technologies">
+              </ul>
+              <div class="popup-btns-container">
+                  <a href="#" class="popup-link live-demo-btn" target="_blank" rel="noreferrer noopener"><div>See Live</div><img
+                          src="popup-img/Icon.png"
+                          alt="Icon signaling the link will be open in a new tab"></a>
+                  <a href="#" class="popup-link source-code-btn" target="_blank" rel="noreferrer noopener"><div>See Source</div>
+                      <img src="popup-img/Icon-GitHub.png" alt="Github logo"></a>
+              </div>
+          </div>
+      </div>
+       <div class="projects-container">
+
+      </div>
       </section>
     </main>
-    <footer class="my-footer footer" >
+    <footer id="footer" class="footer">
       <section class="contact-section" id="contact-section">
         <div class="contact-us">
           <h1>CONTACT US</h1>
@@ -214,10 +155,10 @@
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
         <div class="div-form">
-          <form class="contact-form" id="form" action="https://formspree.io/f/xrgrovrb" method="POST">
-            <div class="input-text"><input type="text" name="username" maxlength="30" placeholder="Enter your full name" required></div> 
-            <div class="input-email"><input type="email" id="email" name="email" placeholder="Example: user@gmail.com" required></div> 
-            <div class="text-area"><textarea maxlength="500" name="text-area" placeholder="Enter text here..." required></textarea></div> 
+          <form id="form" action="https://formspree.io/f/xrgrovrb" method="POST">
+            <div class="input-text"><input id="userName" type="text" name="username" maxlength="30" placeholder="Enter your full name" required></div> 
+            <div class="input-email"><input id="email" type="email" name="email" placeholder="Example: user@gmail.com" required></div> 
+            <div class="text-area"><textarea id="textMessage" maxlength="500" name="text-area" placeholder="Enter text here..." required></textarea></div> 
             <div class="btn-div">
               <button type="submit" class="btn btn-form">See Project</button>
             </div>
@@ -242,8 +183,8 @@
       </div>
       <div class="line-small"></div>
     </footer>
-    <script src="./js/main.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/form.js"></script>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script src="localStorage.js"></script>
 </body>
 </html>
