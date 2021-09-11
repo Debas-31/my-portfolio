@@ -50,7 +50,7 @@ const projects = [
 
 // Display a functions
 
-function renderTechnologies(techArr) {
+const renderTechnologies = (techArr) => {
   let technologiesHtml = "<ul class='technologies-used'>";
   techArr.forEach((tech, index) => {
     technologiesHtml += `<li class='technology'>${tech}</li>`;
@@ -60,10 +60,9 @@ function renderTechnologies(techArr) {
   });
   technologiesHtml += '</ul>';
   return technologiesHtml;
-}
-// console.log(technologiesHtml);
+};
 
-function renderTechnologiesForModal(techArr) {
+const renderTechnologiesForModal = (techArr) => {
   let technologiesHtml = "<ul class='technologies-used'>";
   techArr.forEach((tech, index) => {
     if (index === 0) {
@@ -74,9 +73,9 @@ function renderTechnologiesForModal(techArr) {
   });
   technologiesHtml += '</ul>';
   return technologiesHtml;
-}
+};
 
-function renderSingleProject(p) {
+const renderSingleProject = (p) => {
   const projectHtml = `<div class='project'>
          <div class='screenshot-container'>
            <img src='${p.picture}' alt='Screenshot of the project named ${p.title}'
@@ -93,7 +92,7 @@ function renderSingleProject(p) {
   </div>
       `;
   return projectHtml;
-}
+};
 // Display projects dynamically in the HTML document
 projectsContainer.innerHTML = projects.map((p) => renderSingleProject(p)).join('');
 
