@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# preserve-data-in-the-browser
+# details popup window
 
->In this project's Milestone, I use javascript object to store data from users when submitted the form in local storage.
-![screenshot](./image/Screen-localstorage.png)
+>In this project's Milestone, I use javascript object to design my-portfolio and show a popup effect when click a button.
+![screenshot](./popup-img/../screenShoot-popup.png)
 
 ### Built With
 

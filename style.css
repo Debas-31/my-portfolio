@@ -418,8 +418,8 @@ i {
     opacity: 0.8;
     z-index: 50;
     display: none;
+    color: var(--var-neutral-2);
 }
-
 
 /*
   ========================================
@@ -434,7 +434,7 @@ i {
     transform: translate(-50%, -50%);
     min-width: 70%;
     max-width: 95%;
-    height: auto;
+    height: 100vh;
     background-color: rgb(55, 55, 104);
     border: 1px solid #fff;
     font-family: 'Roboto', serif;
@@ -449,6 +449,8 @@ i {
     z-index: 99;
     visibility: hidden;
     opacity: 0;
+    color: var(--var-neutral-2);
+    overflow-y: hidden;
 }
 
 .popup-project .popup-header {
@@ -500,7 +502,7 @@ i {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 20px;
     display: -webkit-box;
     max-width: 500px;
     -webkit-line-clamp: 3;
