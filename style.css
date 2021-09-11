@@ -413,7 +413,6 @@ i {
   opacity: 0.8;
   z-index: 50;
   display: none;
-  color: var(--var-neutral-2);
 }
 
 /*
@@ -429,7 +428,7 @@ i {
   transform: translate(-50%, -50%);
   min-width: 70%;
   max-width: 95%;
-  height: 100vh;
+  height: 90vh;
   background-color: rgb(55, 55, 104);
   border: 1px solid #fff;
   font-family: 'Roboto', serif;
@@ -444,7 +443,7 @@ i {
   visibility: hidden;
   opacity: 0;
   color: var(--var-neutral-2);
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .popup-project .popup-header {
@@ -474,14 +473,14 @@ i {
 }
 
 .popup-main {
-  margin-top: 3em;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .popup-main .popup-image-container {
-  width: 80%;
+  width: 95%;
   margin-inline: 10%;
   display: flex;
   justify-content: center;
@@ -495,8 +494,8 @@ i {
   font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 2rem;
   display: -webkit-box;
   max-width: 500px;
   -webkit-line-clamp: 3;
@@ -504,12 +503,15 @@ i {
   overflow: hidden;
   text-align: justify;
   text-justify: inter-word;
+  margin-top: 2rem;
 }
 
 .popup-technologies {
   display: flex;
   justify-content: center;
-  margin-block: 20px;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
 }
 
 .popup-technologies .technologies-used {
